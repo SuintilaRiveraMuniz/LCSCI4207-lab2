@@ -42,5 +42,3 @@ fun my-encryptor4(s :: String) -> String:
 end
 
 support.test-encryptor4(my-encryptor4)
-
-  
