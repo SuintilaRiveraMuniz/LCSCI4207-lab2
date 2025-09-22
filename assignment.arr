@@ -23,3 +23,14 @@ fun my-encryptor2(s :: String) -> String:
 end
 
 support.test-encryptor2(my-encryptor2)
+
+support.encryptor3("SUINTILA")
+#i wrote hello and is wirten exactly as the string i wrote
+#i wrote my name in capital letters as may something change but still was displaying with the same characters
+fun my-encryptor3(s :: String) -> String:
+  doc: "returns the same letters"
+  s
+end
+support.test-encryptor3(my-encryptor2)
+
+  
