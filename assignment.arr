@@ -42,3 +42,14 @@ fun my-encryptor4(s :: String) -> String:
 end
 
 support.test-encryptor4(my-encryptor4)
+
+support.encryptor5("united")
+#i wrote hi as string and the output was hj 
+#still unclear for me so i recall abcd and the output was bbcd 
+#still unclear and i wrote hello and the output was hfllp 
+# the vowels are being reeplace with the next consonant letter in the alphabet
+#i wrote united and the output was vnjtfd
+
+fun my-encryptor5(s :: String) -> String:
+  doc: "the vowels in the string are replaced by the consonanletter after"
+  
