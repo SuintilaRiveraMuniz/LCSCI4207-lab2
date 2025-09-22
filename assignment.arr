@@ -9,3 +9,17 @@ fun my-encryptor1(s :: String) -> String:
   s + s + s + s + s
 end
 support.test-encryptor1(my-encryptor1)
+
+support.encryptor2("suintila")
+#i tried as string write 1 and appears an error 
+#the error was: max index 4 is larger than string lenght 1 
+#i tried hello
+#the output is "hell" so just take the first to letters of the string 
+#to confirm i wrot emy name and just wrote "suin"
+
+fun my-encryptor2(s :: String) -> String:
+  doc: "returns the first 4 letters of the string"
+  string-substring(s, 0, 4)
+end
+
+support.test-encryptor2(my-encryptor2)
