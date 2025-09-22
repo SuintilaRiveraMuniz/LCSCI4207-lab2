@@ -33,4 +33,14 @@ fun my-encryptor3(s :: String) -> String:
 end
 support.test-encryptor3(my-encryptor3)
 
+support.encryptor4("University")
+# i wrote just an x and the error was the string should be larger than 4 so i wrote University
+#the output was the first 4 letters but 5 times
+fun my-encryptor4(s :: String) -> String:
+  doc: "returns the first letters of the string and repeat those four letters 5 times"
+  string-substring(s, 0, 4) + string-substring(s, 0, 4) + string-substring(s, 0, 4) + string-substring(s, 0, 4) + string-substring(s, 0, 4)
+end
+
+support.test-encryptor4(my-encryptor4)
+
   
