@@ -101,17 +101,16 @@ support.encryptor9("hello")
 #with a = 97, b=98, c=99, z=122
 #numbers= 49 
 
-support.encryptor10("123456")
+support.encryptor10("suintila")
 fun my-encryptor10(s :: String) -> String:
-  doc: "compute the first 4 strings to lower case and the vowels founded are changed to the next consonant letter repeated 5 times"
+  doc: "take the first 4 characters of the string to lower case and in those characters the vowels founded are changed to the next consonant letter, repeated 5 times"
   s10 = string-tolower(string-substring(s, 0, 4))
   s11 = string-replace(s10, "a", "b")
   s12 = string-replace(s11, "e", "f")
   s13 = string-replace(s12, "i", "j")
   s14 = string-replace(s13, "o", "p")
   s15 = string-replace(s14, "u", "v")
-  s15 + s15 + s15 + s15 + s15 
-  
+  string-repeat(s15, 5)
   
 end
 support.test-encryptor10(my-encryptor10)
