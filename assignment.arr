@@ -24,12 +24,14 @@ end
 
 support.test-encryptor2(my-encryptor2)
 
-support.encryptor3("hello")
+support.encryptor3("h..")
 #i wrote hello and is wirten exactly as the string i wrote
 #i wrote my name in capital letters as may something change but still was displaying with the same characters
+#when i wrote ... was different
 fun my-encryptor3(s :: String) -> String:
-  doc: "returns the same letters"
-  s
+  doc: "returns ! for every ."
+  string-replace(s, ".", "!")
+  
 end
 support.test-encryptor3(my-encryptor3)
 
@@ -43,13 +45,28 @@ end
 
 support.test-encryptor4(my-encryptor4)
 
-support.encryptor5("united")
+support.encryptor5("abcdef")
 #i wrote hi as string and the output was hj 
 #still unclear for me so i recall abcd and the output was bbcd 
 #still unclear and i wrote hello and the output was hfllp 
 # the vowels are being reeplace with the next consonant letter in the alphabet
-#i wrote united and the output was vnjtfd
 
 fun my-encryptor5(s :: String) -> String:
-  doc: "the vowels in the string are replaced by the consonanletter after"
+  doc: "replace the vowels for the next consonant letter"
+  s1 = string-replace(s, "a", "b")
+  s2 = string-replace(s1, "e", "f")
+  s3 = string-replace(s2, "i", "j")
+  s4 = string-replace(s3, "o", "p")
+  s5 = string-replace(s4, "u", "v")
+  s6 = string-replace(s5, "A", "B")
+  s7 = string-replace(s6, "E", "F")
+  s8 = string-replace(s7, "I", "J")
+  s9 = string-replace(s8, "O", "P")
+  s10 = string-replace(s9, "U", "V")
+  s10
   
+end 
+support.test-encryptor5(my-encryptor5)
+
+support.encryptor6("a1b2c3?!.😊")
+
