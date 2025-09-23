@@ -68,5 +68,11 @@ fun my-encryptor5(s :: String) -> String:
 end 
 support.test-encryptor5(my-encryptor5)
 
-support.encryptor6("a1b2c3?!.😊")
+support.encryptor6("ABCDEFG")
+#The capityal letter convert to lower case
+fun my-encryptor6(s :: String) -> String:
+  doc: "The capital letter convert to lower case"
+  string-to-lower(s)
+end
+support.test-encryptor6(my-encryptor6)
 
