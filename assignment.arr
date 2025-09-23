@@ -76,3 +76,42 @@ fun my-encryptor6(s :: String) -> String:
 end
 support.test-encryptor6(my-encryptor6)
 
+support.encryptor7("123")
+fun my-encryptor7(s :: String) -> Number:
+  doc: "compute the string and gave how much characters it has"
+  string-length(s)
+end
+support.test-encryptor7(my-encryptor7)
+
+support.encryptor8("1")
+fun my-encryptor8(s :: String) -> String:
+  doc: "compute the string adding!!! for 3 times"
+  s + "!!!" + s + "!!!" + s + "!!!"
+end 
+support.test-encryptor8(my-encryptor8)
+
+support.encryptor9("hello")
+#1 or " "=32
+#2,3 =49
+#. =46
+#23. = 50
+#abc. = 97
+#bc. = 98
+
+#with a = 97, b=98, c=99, z=122
+#numbers= 49 
+
+support.encryptor10("123456")
+fun my-encryptor10(s :: String) -> String:
+  doc: "compute the first 4 strings to lower case and the vowels founded are changed to the next consonant letter repeated 5 times"
+  s11 = string-tolower(string-substring(s, 0, 4))
+    s21 = string-replace(s11, "a", "b")
+    s21 = string-replace(s21, "e", "f")
+    s31 = string-replace(s31, "i", "j")
+    s41 = string-replace(s41, "o", "p")
+    s51 = string-replace(s51, "u", "v")
+    s51)
+  
+  
+end
+support.test-encryptor10(my-encryptor10)
