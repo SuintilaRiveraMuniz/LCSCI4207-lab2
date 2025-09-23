@@ -104,13 +104,13 @@ support.encryptor9("hello")
 support.encryptor10("123456")
 fun my-encryptor10(s :: String) -> String:
   doc: "compute the first 4 strings to lower case and the vowels founded are changed to the next consonant letter repeated 5 times"
-  s11 = string-tolower(string-substring(s, 0, 4))
-    s21 = string-replace(s11, "a", "b")
-    s21 = string-replace(s21, "e", "f")
-    s31 = string-replace(s31, "i", "j")
-    s41 = string-replace(s41, "o", "p")
-    s51 = string-replace(s51, "u", "v")
-    s51)
+  s10 = string-tolower(string-substring(s, 0, 4))
+  s11 = string-replace(s10, "a", "b")
+  s12 = string-replace(s11, "e", "f")
+  s13 = string-replace(s12, "i", "j")
+  s14 = string-replace(s13, "o", "p")
+  s15 = string-replace(s14, "u", "v")
+  s15 + s15 + s15 + s15 + s15 
   
   
 end
