@@ -48,9 +48,7 @@ support.test-encryptor4(my-encryptor4)
 
 
 support.encryptor5("abcdef")
-#i wrote hi as string and the output was hj 
-#still unclear for me so i recall abcd and the output was bbcd 
-#still unclear and i wrote hello and the output was hfllp 
+
 # the vowels are being reeplace with the next consonant letter in the alphabet
 
 fun my-encryptor5(s :: String) -> String:
@@ -114,7 +112,7 @@ support.test-encryptor9(my-encryptor9)
 
 
 
-support.encryptor10("suintila")
+support.encryptor10("hello")
 fun my-encryptor10(s :: String) -> String:
   doc: "take the first 4 characters of the string to lower case and in those characters the vowels founded are changed to the next consonant letter, repeated 5 times"
   s10 = string-tolower(string-substring(s, 0, 4))
@@ -123,7 +121,7 @@ fun my-encryptor10(s :: String) -> String:
   s13 = string-replace(s12, "i", "j")
   s14 = string-replace(s13, "o", "p")
   s15 = string-replace(s14, "u", "v")
-  string-repeat(s15, 5)
+  s15 + s15 + s15 + s15 + s15, 5
 end
 support.test-encryptor10(my-encryptor10)
 
