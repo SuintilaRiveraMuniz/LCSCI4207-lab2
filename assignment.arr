@@ -10,6 +10,7 @@ fun my-encryptor1(s :: String) -> String:
 end
 support.test-encryptor1(my-encryptor1)
 
+
 support.encryptor2("suintila")
 #i tried as string write 1 and appears an error 
 #the error was: max index 4 is larger than string lenght 1 
@@ -21,7 +22,6 @@ fun my-encryptor2(s :: String) -> String:
   doc: "returns the first 4 letters of the string"
   string-substring(s, 0, 4)
 end
-
 support.test-encryptor2(my-encryptor2)
 
 
@@ -32,7 +32,6 @@ support.encryptor3("h..")
 fun my-encryptor3(s :: String) -> String:
   doc: "returns ! for every ."
   string-replace(s, ".", "!")
-  
 end
 support.test-encryptor3(my-encryptor3)
 
@@ -81,7 +80,7 @@ end
 support.test-encryptor6(my-encryptor6)
 
 
-support.encryptor7("123")
+support.encryptor7("123456")
 fun my-encryptor7(s :: String) -> Number:
   doc: "compute the string and gave how much characters it has"
   string-length(s)
@@ -97,7 +96,7 @@ end
 support.test-encryptor8(my-encryptor8)
 
 
-support.encryptor9("hello")
+support.encryptor9("hola")
 #1 or " "=32
 #2,3 =49
 #. =46
@@ -107,9 +106,9 @@ support.encryptor9("hello")
 
 #with a = 97, b=98, c=99, z=122
 #numbers= 49 
-fun my-encryptor9(s :: String) -> Number:
+fun my-encryptor9(s :: String) -> List:
   doc:"make the string intto a number"
-  string-to-code-point(s)
+  string-to-code-points(s)
 end
 support.test-encryptor9(my-encryptor9)
 
@@ -125,6 +124,6 @@ fun my-encryptor10(s :: String) -> String:
   s14 = string-replace(s13, "o", "p")
   s15 = string-replace(s14, "u", "v")
   string-repeat(s15, 5)
-  
 end
 support.test-encryptor10(my-encryptor10)
+
