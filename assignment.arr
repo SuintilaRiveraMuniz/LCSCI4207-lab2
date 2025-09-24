@@ -110,7 +110,7 @@ fun my-encryptor9(s :: String) -> List<Number>:
 end
 support.test-encryptor9(my-encryptor9)
 
-
+# 9 and 10 were a bit difficult, i tried to resolv it but was 0/6 test 
 
 support.encryptor10("hello")
 fun my-encryptor10(s :: String) -> String:
@@ -121,7 +121,7 @@ fun my-encryptor10(s :: String) -> String:
   s13 = string-replace(s12, "i", "j")
   s14 = string-replace(s13, "o", "p")
   s15 = string-replace(s14, "u", "v")
-  s15 + s15 + s15 + s15 + s15, 5
+  s15 + s15 + s15 + s15 + s15
 end
 support.test-encryptor10(my-encryptor10)
 
