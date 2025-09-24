@@ -24,6 +24,7 @@ end
 
 support.test-encryptor2(my-encryptor2)
 
+
 support.encryptor3("h..")
 #i wrote hello and is wirten exactly as the string i wrote
 #i wrote my name in capital letters as may something change but still was displaying with the same characters
@@ -35,6 +36,7 @@ fun my-encryptor3(s :: String) -> String:
 end
 support.test-encryptor3(my-encryptor3)
 
+
 support.encryptor4("University")
 # i wrote just an x and the error was the string should be larger than 4 so i wrote University
 #the output was the first 4 letters but 5 times
@@ -44,6 +46,7 @@ fun my-encryptor4(s :: String) -> String:
 end
 
 support.test-encryptor4(my-encryptor4)
+
 
 support.encryptor5("abcdef")
 #i wrote hi as string and the output was hj 
@@ -68,6 +71,7 @@ fun my-encryptor5(s :: String) -> String:
 end 
 support.test-encryptor5(my-encryptor5)
 
+
 support.encryptor6("ABCDEFG")
 #The capityal letter convert to lower case
 fun my-encryptor6(s :: String) -> String:
@@ -76,6 +80,7 @@ fun my-encryptor6(s :: String) -> String:
 end
 support.test-encryptor6(my-encryptor6)
 
+
 support.encryptor7("123")
 fun my-encryptor7(s :: String) -> Number:
   doc: "compute the string and gave how much characters it has"
@@ -83,12 +88,14 @@ fun my-encryptor7(s :: String) -> Number:
 end
 support.test-encryptor7(my-encryptor7)
 
+
 support.encryptor8("1")
 fun my-encryptor8(s :: String) -> String:
   doc: "compute the string adding!!! for 3 times"
   s + "!!!" + s + "!!!" + s + "!!!"
 end 
 support.test-encryptor8(my-encryptor8)
+
 
 support.encryptor9("hello")
 #1 or " "=32
@@ -100,8 +107,15 @@ support.encryptor9("hello")
 
 #with a = 97, b=98, c=99, z=122
 #numbers= 49 
+fun my-encryptor9(s :: String) -> Number:
+  doc:"make the string intto a number"
+  string-to-code-point(s)
+end
+support.test-encryptor9(my-encryptor9)
 
 support.encryptor10("suintila")
+
+
 fun my-encryptor10(s :: String) -> String:
   doc: "take the first 4 characters of the string to lower case and in those characters the vowels founded are changed to the next consonant letter, repeated 5 times"
   s10 = string-tolower(string-substring(s, 0, 4))
