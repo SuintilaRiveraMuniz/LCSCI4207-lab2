@@ -106,15 +106,15 @@ support.encryptor9("hola")
 
 #with a = 97, b=98, c=99, z=122
 #numbers= 49 
-fun my-encryptor9(s :: String) -> List:
-  doc:"make the string intto a number"
+fun my-encryptor9(s :: String) -> List<Number>:
+  doc: "make the string into a number"
   string-to-code-points(s)
 end
 support.test-encryptor9(my-encryptor9)
 
+
+
 support.encryptor10("suintila")
-
-
 fun my-encryptor10(s :: String) -> String:
   doc: "take the first 4 characters of the string to lower case and in those characters the vowels founded are changed to the next consonant letter, repeated 5 times"
   s10 = string-tolower(string-substring(s, 0, 4))
